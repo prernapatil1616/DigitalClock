@@ -1,0 +1,43 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ddd9eee1; 
+  }
+  
+  #clock {
+    font-size: 4rem;
+    width: 30%;
+    height: 30%;
+    font-family: sans-serif;
+    color: #5A49B4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    padding: 7%;
+    border: 1px solid #cbc5eb;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: pulse 1.5s infinite;
+    margin: 51%;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.09);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
